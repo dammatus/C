@@ -1,4 +1,6 @@
-#Estructuras de Datos y Algoritmos en C
+# Estructuras de Datos y Algoritmos en C
+### [English](# Data Structures and Algorithms in C)
+
 
 Este repositorio contiene el código fuente y los recursos relacionados con mis trabajos de Estructura de Datos y Algoritmos en el lenguaje de programación C. Este proyecto fue desarrollado como parte de mi curso de Estructura de Datos y Algoritmos en [Universidad Nacional de San Luis].
 
@@ -112,4 +114,118 @@ Compilado en CodeBlocks
 
 Si deseas contribuir a este proyecto, ¡te animo a hacerlo! Puedes enviar propuestas de cambios (pull requests) o informar sobre problemas (issues) que encuentres.
 
+# Data Structures and Algorithms in C
 
+This repository contains the source code and related resources for my work on Data Structures and Algorithms in the C programming language. This project was developed as part of my course on Data Structures and Algorithms at [Universidad Nacional de San Luis].
+
+## Accuracy Disclaimer
+
+This repository contains code and resources provided for the purpose of learning, experimentation, and collaboration. It's important to note that everything was done during my course in Data Structures and Algorithms, and that not all code is correct and efficient.
+
+If you find errors, problems, or inaccuracies in this repository, please inform me by opening an "Issue" or a "Pull Request." Your contribution is valuable to improve the quality of this resource.
+
+## Description
+
+## Binary Search Tree (BST) in C
+
+This repository contains the implementation of a Binary Search Tree (BST) in the C programming language. The BST has been implemented with the following features:
+
+- **Replacement Policy**: Smallest of the Greater.
+- **Main Functions**:
+  - `initBST`: Initializes a new binary search tree.
+  - `locateBST`: Searches for a value in the tree.
+  - `retrieveBST`: Retrieves a value from the tree.
+  - `insertBST`: Inserts a value into the tree.
+  - `deleteBST`: Removes a value from the tree.
+  - `showStructureBST`: Displays the current structure of the tree.
+
+This binary search tree is used to store and manage a collection of vendors based on their identification number (DNI). The replacement policy used is "Smallest of the Greater," which means that a node with the smallest value among the greater nodes is replaced when a deletion is performed.
+
+You can find more details about usage and implementation in the comments of the source code.
+
+## Unordered Sequential List (USL) in C with Heapsort Sorting
+
+This repository contains the implementation of an Unordered Sequential List (USL) in the C programming language, along with ascending sorting of elements using the Heapsort algorithm. The USL has been implemented with the following features:
+
+- **Sorting**: Heapsort in ascending order.
+- **Priority**: Field `salesQty` of the vendors.
+- **Descending Order**: Sorting is performed in descending order based on the sales quantity of the vendors.
+
+**Main Functions**:
+  - `initUSL`: Initializes a new unordered sequential list.
+  - `locateUSL`: Searches for a value in the list.
+  - `insertUSL`: Inserts a value into the list.
+  - `showStructureUSL`: Displays the current structure of the list.
+  - `heapSort`: Sorts the list using the Heapsort algorithm.
+
+This implementation of USL allows storing and managing a collection of vendors, prioritizing vendors with a higher quantity of sales. The Heapsort algorithm is used to sort the list in ascending order based on the sales quantity of the vendors.
+
+You can find more details about usage and implementation in the comments of the source code.
+
+## Quadratic Open Addressing Hash Table (QOAHT) in C
+
+This repository contains the implementation of a Quadratic Open Addressing Hash Table (QOAHT) in the C programming language. The QOAHT is designed to manage a set of vendor records using a bucket structure with collision resolution through quadratic probing.
+
+**Key Features:**
+- **Table Size (M)**: 149 (the nearest prime number to 110/0.77).
+- **Main Functions**:
+  - `initQOAHT`: Initializes a new Quadratic Open Addressing Hash Table (QOAHT).
+  - `hashingQOAHT`: Hashing function used to calculate the position of a record in the QOAHT.
+  - `locateQOAHT`: Searches for a record in the QOAHT.
+  - `retrieveQOAHT`: Retrieves a record from the QOAHT.
+  - `insertQOAHT`: Inserts a new record into the QOAHT.
+  - `deleteQOAHT`: Deletes a record from the QOAHT.
+  - `showStructureQOAHT`: Displays the current structure of the QOAHT.
+
+This QOAHT allows storing and managing a collection of vendors based on their identification number (DNI). It uses a hashing technique to calculate the position of records based on their DNIs and resolves collisions using quadratic probing. The QOAHT supports operations such as insertion, deletion, location, and retrieval of records.
+
+You can find more details about usage and implementation in the comments of the source code.
+
+## Separate Chaining Hash Table (SCHT) in C
+
+This repository contains the implementation of a Separate Chaining Hash Table (SCHT) in the C programming language. The SCHT is designed to manage a set of vendor records using a bucket structure with collision resolution through singly linked lists.
+
+**Key Features:**
+- **Table Size (M)**: 60 (based on a factor of 110/1.84).
+- **Main Functions**:
+  - `initSCHT`: Initializes a new Separate Chaining Hash Table (SCHT).
+  - `hashingSCHT`: Hashing function used to calculate the position of a record in the SCHT.
+  - `locateSCHT`: Searches for a record in the SCHT.
+  - `retrieveSCHT`: Retrieves a record from the SCHT.
+  - `insertSCHT`: Inserts a new record into the SCHT.
+  - `deleteSCHT`: Deletes a record from the SCHT.
+  - `showStructureSCHT`: Displays the current structure of the SCHT.
+
+This SCHT allows storing and managing a collection of vendors based on their identification number (DNI). It uses a hashing technique to calculate the position of records based on their DNIs and resolves collisions using singly linked lists. The SCHT supports operations such as insertion, deletion, location, and retrieval of records.
+
+You can find more details about usage and implementation in the comments of the source code.
+
+## Doubly Linked List (DLL) in C
+
+This repository contains the implementation of a Doubly Linked List (DLL) in the C programming language. This data structure allows managing a collection of elements using nodes that are linked both to the next and previous nodes, facilitating navigation in both
+
+ directions.
+
+**Key Features:**
+- **Node Structure**: Each node in the list contains an element of type `varado` and two pointers: one to the next node (`next`) and one to the previous node (`back`).
+- **Main Functions**:
+  - `init_list`: Initializes a new list.
+  - `reset`: Resets the list's cursor to the beginning.
+  - `isEmpty`: Checks if the list is empty.
+  - `isFull`: Checks if it's not possible to add more elements to the list due to memory limitations.
+  - `forwards`: Moves the cursor forward in the list.
+  - `backwards`: Moves the cursor backward in the list.
+  - `copy`: Copies the element pointed to by the cursor.
+  - `isOutOfSequence`: Checks if the cursor is out of the list's sequence.
+  - `remove`: Removes the element pointed to by the cursor.
+  - `insert`: Inserts a new element into the list after the element pointed to by the cursor.
+
+This implementation of a Doubly Linked List allows efficient insertion, deletion, and navigation in both directions. It's a versatile data structure useful in various applications.
+
+## Execution Environment
+
+Compiled with CodeBlocks
+
+## Contribution
+
+If you wish to contribute to this project, I encourage you to do so! You can submit proposals for changes (pull requests) or report issues you find.
