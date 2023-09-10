@@ -1,5 +1,5 @@
 # Estructuras de Datos y Algoritmos en C
-### [English](#Data Structures and Algorithms in C)
+### [English](## Description) Data Structures and Algorithms in C
 
 
 Este repositorio contiene el código fuente y los recursos relacionados con mis trabajos de Estructura de Datos y Algoritmos en el lenguaje de programación C. Este proyecto fue desarrollado como parte de mi curso de Estructura de Datos y Algoritmos en [Universidad Nacional de San Luis].
